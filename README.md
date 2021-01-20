@@ -1,4 +1,4 @@
-# react-native-crisp-chat-sdk
+# crisp-chat-v
 
 React-Native bridge for Crisp chat iOS and Android SDK&#39;s
 
@@ -14,11 +14,11 @@ React-Native bridge for Crisp chat iOS and Android SDK&#39;s
 Install the library using either yarn or npm like so:
 
 ```sh
-yarn add react-native-crisp-chat-sdk
+yarn add crisp-chat-v
 ```
 
 ```sh
-npm install --save react-native-crisp-chat-sdk
+npm install --save crisp-chat-v
 ```
 
 ### iOS Installation
@@ -31,7 +31,7 @@ cd ios && pod install
 
 For versions below 0.60.0, use rnpm links
 
-- Run `react-native link react-native-crisp-chat-sdk`
+- Run `react-native link crisp-chat-v`
 - If linking fails, follow the
   [manual linking steps](https://facebook.github.io/react-native/docs/linking-libraries-ios.html#manual-linking)
 
@@ -66,6 +66,7 @@ All you have to do is:
 ### Android
 
 Initialize the library in your [Application subclass] (MainApplication.java)
+
 ```java
 import im.crisp.sdk.Crisp;
 
@@ -85,7 +86,7 @@ public class MainApplication extends Application implements ReactApplication {
 
 ## Requirements
 
-⚠️ Adding Camera and Photo permissions is mandatory, `NSCameraUsageDescription` and `NSPhotoLibraryUsageDescription` in  `Info.plist`, to inform your users that you need to access to the Camera and Photo Library. You also have to enable **"iCloud Documents"** capability
+⚠️ Adding Camera and Photo permissions is mandatory, `NSCameraUsageDescription` and `NSPhotoLibraryUsageDescription` in `Info.plist`, to inform your users that you need to access to the Camera and Photo Library. You also have to enable **"iCloud Documents"** capability
 
 ## Get your website ID
 
@@ -100,32 +101,35 @@ Crisp Website ID is an UUID like e30a04ee-f81c-4935-b8d8-5fa55831b1c0
 You can view the [example project](./example/src/App.tsx) for more usage.
 
 BREAKING CHANGE in version 0.2.0
-To display the crisp chat view in iOS you now have to call `CrispChatSDK.show()`. This will render the view as a ios native modal. 
+To display the crisp chat view in iOS you now have to call `CrispChatSDK.show()`. This will render the view as a ios native modal.
 
 ```js
-import { CrispChatSDK, CrispChatUI } from 'react-native-crisp-chat-sdk';
+import { CrispChatSDK, CrispChatUI } from 'crisp-chat-v';
 
 // ...
 
-CrispChatSDK.setUserEmail('test@test.com')
+CrispChatSDK.setUserEmail('test@test.com');
 
-if (Platform.OS === "ios") {
-  CrispChatSDK.show()
+if (Platform.OS === 'ios') {
+  CrispChatSDK.show();
 } else {
-  const renderCrispChat = () => <CrispChatUI style={{ flex: 1, width: '100%' }} />
+  const renderCrispChat = () => (
+    <CrispChatUI style={{ flex: 1, width: '100%' }} />
+  );
 }
 ```
 
 ## Availables APIs:
-* `CrispChatSDK.show()` (iOS only)
-* `CrispChatSDK.setTokenId('XXXX')` (iOS only)
-* `CrispChatSDK.pushSessionEvent(name: "Signup", color: CrispSessionEventColors.blue)` (iOS only)
-* `CrispChatSDK.setUserEmail('test@test.com')`
-* `CrispChatSDK.setUserNickname('John Doe')`
-* `CrispChatSDK.setUserPhone('003370123456789')`
-* `CrispChatSDK.setUserAvatar('https://pbs.twimg.com/profile_images/782474226020200448/zDo-gAo0_400x400.jpg')`
-* `CrispChatSDK.setSessionSegment('segment')`
-* `CrispChatSDK.resetSession()`
+
+- `CrispChatSDK.show()` (iOS only)
+- `CrispChatSDK.setTokenId('XXXX')` (iOS only)
+- `CrispChatSDK.pushSessionEvent(name: "Signup", color: CrispSessionEventColors.blue)` (iOS only)
+- `CrispChatSDK.setUserEmail('test@test.com')`
+- `CrispChatSDK.setUserNickname('John Doe')`
+- `CrispChatSDK.setUserPhone('003370123456789')`
+- `CrispChatSDK.setUserAvatar('https://pbs.twimg.com/profile_images/782474226020200448/zDo-gAo0_400x400.jpg')`
+- `CrispChatSDK.setSessionSegment('segment')`
+- `CrispChatSDK.resetSession()`
 
 ## Contributing
 

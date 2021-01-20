@@ -7,7 +7,7 @@ target 'CrispChatSdkExample' do
   # Pods for CrispChatSdkExample
   config = use_native_modules!
 
-  pod 'react-native-crisp-chat-sdk', :path => '../..'
+  pod 'crisp-chat-v', :path => '../..'
 
   use_react_native!(:path => config["reactNativePath"])
   

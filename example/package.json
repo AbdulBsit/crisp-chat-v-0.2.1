@@ -1,6 +1,6 @@
 {
-  "name": "react-native-crisp-chat-sdk-example",
-  "description": "Example app for react-native-crisp-chat-sdk",
+  "name": "crisp-chat-v-example",
+  "description": "Example app for crisp-chat-v",
   "version": "0.0.1",
   "private": true,
   "scripts": {

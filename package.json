@@ -1,5 +1,5 @@
 {
-  "name": "react-native-crisp-chat-sdk",
+  "name": "crisp-chat-v",
   "version": "0.2.1",
   "description": "React-Native bridge for Crisp chat iOS and Android SDK&#39;s",
   "main": "lib/commonjs/index.js",
@@ -12,7 +12,7 @@
     "lib",
     "android",
     "ios",
-    "react-native-crisp-chat-sdk.podspec"
+    "crisp-chat-v.podspec"
   ],
   "scripts": {
     "test": "jest",
@@ -29,13 +29,13 @@
     "ios",
     "android"
   ],
-  "repository": "https://github.com/walterholohan/react-native-crisp-chat-sdk",
+  "repository": "https://github.com/walterholohan/crisp-chat-v",
   "author": "Walter Holohan <walter.holohan@gmail.com> (https://github.com/walterholohan)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/walterholohan/react-native-crisp-chat-sdk/issues"
+    "url": "https://github.com/walterholohan/crisp-chat-v/issues"
   },
-  "homepage": "https://github.com/walterholohan/react-native-crisp-chat-sdk#readme",
+  "homepage": "https://github.com/walterholohan/crisp-chat-v#readme",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.3.4",
     "@react-native-community/bob": "^0.16.2",

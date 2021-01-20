@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "react-native-crisp-chat-sdk": ["./src/index"]
+      "crisp-chat-v": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

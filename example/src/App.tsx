@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   Platform,
 } from 'react-native';
-import { CrispChatSDK, CrispChatUI } from 'react-native-crisp-chat-sdk';
+import { CrispChatSDK, CrispChatUI } from 'crisp-chat-v';
 
 export default function App() {
   const [showChat, setShowChat] = React.useState<boolean>(false);
