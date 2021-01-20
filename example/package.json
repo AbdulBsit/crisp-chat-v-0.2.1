@@ -1,0 +1,22 @@
+{
+  "name": "react-native-crisp-chat-sdk-example",
+  "description": "Example app for react-native-crisp-chat-sdk",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "clean": "watchman watch-del-all && rm -rf $TMPDIR/react-native-packager-cache-* && rm -rf $TMPDIR/metro-bundler-cache-* && rm -rf node_modules/ && rm -rf ios/build && rm -rf ios/pods && rm -rf android/build && yarn build",
+    "build": "yarn && cd ios && pod install",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.2"
+  },
+  "devDependencies": {
+    "@babel/core": "7.8.4",
+    "@babel/runtime": "7.8.4",
+    "metro-react-native-babel-preset": "0.59.0"
+  }
+}
